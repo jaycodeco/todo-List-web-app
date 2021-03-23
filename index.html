@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main>
+        <div class="img_wrap">
+            <img src="./assets/bg1.jpg" id="dayImg" alt="hero img">
+            <div id="crrtTime">20:32</div>
+            <div id="crrtDay">Monday</div>
+        </div>
+        <div class="space_holder" id="taskList">
+            
+        </div>
+        <div class="add_task">
+            <input type="button" value="+" onclick="toggle()" >
+        </div>
+
+    </main>
+    <section id="taskForm">
+        <div class="wrap">
+            <textarea id="data"></textarea><br>
+            <input type="button" value="Add" onclick="addNote()" ><input type="button" value="Cancel" onclick="hide()">
+        </div>
+    </section>
+    
+
+    <script src="./app.js"></script>
+</body>
+</html>
